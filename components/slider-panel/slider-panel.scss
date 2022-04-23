@@ -1,0 +1,11 @@
+.slider-panel {
+  display: flex;
+
+  align-self: center;
+}
+
+.slider-paner--visibility--mobile-only {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}

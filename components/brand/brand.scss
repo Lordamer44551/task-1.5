@@ -1,0 +1,29 @@
+.brand {
+  display: flex;
+  justify-content: space-between;
+
+  height: 72px;
+
+  padding: 16px;
+
+  border: 1px solid #eaeaea;
+  border-radius: 7.5px;
+
+  background: #ffffff;
+
+  @media (max-width: 768px) {
+    width: 240px;
+  }
+
+  &__button {
+    width: 40px;
+    height: 40px;
+
+    background: url(components/brand/brand__button/back.svg) no-repeat,
+      url(components/brand/brand__button/dropdown.svg) center center no-repeat;
+  }
+
+  &__logo {
+    max-width: 128px;
+  }
+}

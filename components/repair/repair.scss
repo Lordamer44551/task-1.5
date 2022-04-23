@@ -1,0 +1,55 @@
+.repair {
+  display: flex;
+  flex-direction: column;
+
+  max-width: 1120px;
+
+  margin: 0px auto;
+
+  background: #f8f8f8;
+
+  @media (max-width: 768px) {
+    &__header {
+      height: 80px;
+    }
+
+    &__content-container {
+      padding: 16px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    &__header {
+      height: 56px;
+    }
+
+    &__content-container {
+      padding: 16px 24px;
+    }
+    &__title {
+      height: 56px;
+    }
+  }
+
+  &__header {
+    background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
+  }
+
+  &__title {
+    display: inline;
+
+    vertical-align: center;
+
+    font-family: "TT Lakes";
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-transform: uppercase;
+
+    color: #7e7e82;
+  }
+
+  &__show-more-button {
+    margin-left: 8px;
+  }
+}
