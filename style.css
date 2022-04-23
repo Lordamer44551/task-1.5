@@ -1,3 +1,22 @@
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-DemiBold.eot");
+  src: local("TT Lakes DemiBold"), local("TTLakes-DemiBold"), url("fonts/TTLakes-DemiBold.eot?#iefix") format("embedded-opentype"), url("fonts/TTLakes-DemiBold.woff") format("woff"), url("fonts/TTLakes-DemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "TT Lakes";
+  src: url("fonts/TTLakes-Regular.eot");
+  src: local("TT Lakes Regular"), local("TTLakes-Regular"), url("fonts/TTLakes-Regular.eot?#iefix") format("embedded-opentype"), url("fonts/TTLakes-Regular.woff") format("woff"), url("fonts/TTLakes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+.wrapper {
+  min-height: 100%;
+  font-family: "TT Lakes";
+}
+
 .brand {
   display: flex;
   justify-content: space-between;
@@ -83,7 +102,7 @@
   background: linear-gradient(90deg, #f8f8f8 1.39%, #ffffff 100%);
 }
 .repair__title {
-  font-family: "TT Lakes";
+  font-family: inherit;
   font-size: 16px;
   line-height: 24px;
   letter-spacing: -0.2px;
@@ -105,10 +124,6 @@
   }
 }
 
-.wrapper {
-  min-height: 100%;
-}
-
 @media (max-width: 768px) {
   .show-more-button {
     display: none;
@@ -123,7 +138,7 @@
     margin-right: 17px;
   }
   .show-more-button__text {
-    font-family: "TT Lakes";
+    font-family: inherit;
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
